@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pickleball Hub - Đam Mê & Kết Nối</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body>
-    <h1>Welcome to pickle ball</h1>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header / Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl font-bold text-blue-600">Pickleball<span class="text-green-500">Hub</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#intro" class="hover:text-blue-600 transition">Giới thiệu</a>
+                    <a href="#athletes" class="hover:text-blue-600 transition">Vận động viên</a>
+                    <a href="#equipment" class="hover:text-blue-600 transition">Thiết bị</a>
+                </div>
+                <button class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Tham gia ngay</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-blue-900 text-white py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com')] bg-cover bg-center"></div>
+        <div class="max-w-7xl mx-auto relative z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Môn Thể Thao <br><span class="text-green-400">Bùng Nổ Toàn Cầu</span></h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-blue-100">Pickleball - Sự kết hợp hoàn hảo giữa Tennis, Cầu lông và Bóng bàn. Dễ học, vui nhộn và phù hợp với mọi lứa tuổi.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#athletes" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-semibold transition text-lg shadow-lg">Xem ngôi sao thế giới</a>
+                <a href="#" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-xl font-semibold transition text-lg">Tìm hiểu luật chơi</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 underline decoration-green-500 decoration-4 underline-offset-8">Pickleball là gì?</h2>
+                <p class="text-gray-600 mb-4 leading-relaxed">Xuất hiện từ năm 1965, Pickleball đã trở thành môn thể thao phát triển nhanh nhất thế giới. Với kích thước sân nhỏ hơn tennis và sử dụng bóng nhựa có lỗ, đây là môn chơi đòi hỏi sự khéo léo, chiến thuật và khả năng phản xạ nhanh.</p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-2"><span class="text-green-500">✔</span> Dễ dàng tiếp cận cho người mới bắt đầu.</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✔</span> Tăng cường sức khỏe tim mạch và sự dẻo dai.</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✔</span> Môi trường giao lưu cộng đồng tuyệt vời.</li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="img/pic1.webp" class="rounded-2xl shadow-md h-64 w-full object-cover" alt="Pickleball 1">
+                <img src="img/pic2.webp" class="rounded-2xl shadow-md h-64 w-full object-cover mt-8" alt="Pickleball 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Athletes Section -->
+    <section id="athletes" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Các Siêu Sao Pickleball</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">Những tay vợt đang thống trị bảng xếp hạng thế giới và truyền cảm hứng cho hàng triệu người chơi.</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- VĐV 1: Ben Johns -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="img/pic3.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Ben Johns">
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">#1 Thế giới</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-1">Ben Johns</h3>
+                        <p class="text-blue-600 font-medium mb-4">Huyền thoại Pickleball</p>
+                        <p class="text-gray-500 text-sm italic">"Ông vua" của làng Pickleball với hơn 100 danh hiệu PPA, người định nghĩa lại lối chơi hiện đại.</p>
+                    </div>
+                </div>
+
+                <!-- VĐV 2: Anna Leigh Waters -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="img/pic6.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Anna Leigh Waters">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">Kỷ lục gia trẻ</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-1">Quách Tùng Dương</h3>
+                        <p class="text-blue-600 font-medium mb-4">Tay vợt số 1 Đông Nam Á</p>
+                        <p class="text-gray-500 text-sm italic">Vô địch giải chuyên nghiệp khi mới 12 tuổi, cô là gương mặt đại diện cho thế hệ trẻ Pickleball.</p>
+                    </div>
+                </div>
+
+                <!-- VĐV 3: Quang Dương -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="img/pic5.webp" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Quang Dương">
+                        <div class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">Top 6 Thế giới</div>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-1">Quang Dương</h3>
+                        <p class="text-blue-600 font-medium mb-4">Niềm tự hào gốc Việt</p>
+                        <p class="text-gray-500 text-sm italic">Ngôi sao đang lên trong top 10 thế giới với lối chơi mạnh mẽ và đầy kỹ thuật.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <span class="text-2xl font-bold text-white">Pickleball<span class="text-green-500">Hub</span></span>
+            <p>© 2024 Pickleball Hub. Tất cả quyền lợi được bảo lưu.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition">Facebook</a>
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
